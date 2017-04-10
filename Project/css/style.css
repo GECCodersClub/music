@@ -4,7 +4,7 @@ body{
 }
 #navig{
         padding: 0.5em;
-        background-color:rgba(12, 26, 39,0.7)
+        background-color:rgba(12, 26, 39,0.3)
 }
 #navig ul li a{
     text-decoration: none;
@@ -15,11 +15,16 @@ body{
     margin-right: 0em;
     font-family: Purisa;
 }
-#navig ul li{;
+#navig ul li{
     list-style:none;
     display:inline;
 }
-#navig ul li a:hover{  
+#navig ul li{
+    list-style:none;
+    display:inline;
+}
+#navig ul li a:hover{
+pointer-events:visibleStroke;
 padding: 2em;
 background-color: white;
 font-family: Purisa;
@@ -31,14 +36,14 @@ color:#000000;
 -o-transition: all 1s ease;
 transition : all 1s ease;
 
--webkit-border-radius: 0 40px 40px 40px;
-border-radius: 0 40px 40px 40px;
+-webkit-border-radius: 0 40px 0px 40px;
+border-radius: 0 40px 0px 40px;
 }
 body{margin: 0; position: relative;}
 *{
 	font-family: Purisa;
     font-weight: BOLD;
-	color: #000000;
+	color: #FFF;
 }
 ul li{
 	font-size:15px;
@@ -52,7 +57,7 @@ ul li{
 	text-align: center;
 }
 #pop-up .container{
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(22,22,22,0.5);
 	padding: 30px;
 	position: absolute;
 	top: 50px;
@@ -87,8 +92,12 @@ button{
 }
 @keyframes drop{
 	0%{opacity: 0;}
-	70%{ transform: translateY(500px)}
-	100%{ transform: translateY(450px); opacity: 1;}
+	50%{ transform: translateY(450px)}
+	70%{ transform: translateY(400px); opacity: 1;}
+    80%{ transform: translateY(430px); opacity: 1;}
+    90%{ transform: translateY(410px); opacity: 1;}
+    100%{ transform: translateY(425px); opacity: 1;}
+    
 
 }
 #footx{
